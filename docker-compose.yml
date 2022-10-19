@@ -14,7 +14,7 @@ services:
   metabase:
     image: metabase/metabase:latest
     ports:
-      - "3000"
+      - "3000:3000"
     links:
       - "postgres:database"
     environment:
@@ -23,7 +23,7 @@ services:
       - "MB_DB_PASS=$POSTGRES_ROOT_PASSWORD"
       - MB_DB_PORT=5432
       - MB_DB_HOST=postgres
-      - "MB_DB_HOST=$DB_NAME"
+      - "MB_DB_DBNAME=$DB_NAME"
 volumes:
   postgres_volume:
 
