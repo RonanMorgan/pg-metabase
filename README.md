@@ -8,7 +8,8 @@ POSTGRES_ROOT_PASSWORD=
 POSTGRES_ROOT_USER=  
 DB_NAME=
 
-=> you can use the following command to launch postgres and metabase :
-docker-compose up -d
+=> you can use the following command to launch postgres and metabase :     
+
+    docker-compose up -d
 
 Metabase will be available on the localhost:3000 adress
